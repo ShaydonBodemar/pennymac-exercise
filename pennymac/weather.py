@@ -52,7 +52,7 @@ class Weather:
 
     def get_minimum_temp_spread_day(self):
         """
-        Determines and returns the minimum temperature spread from the days in the data.
+        Determines and returns the day number with minimum temperature spread from the days in the data.
 
         Returns:
             day (int): the day number with this minimum temp difference

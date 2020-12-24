@@ -11,7 +11,6 @@ Date:
 
 import pandas
 import re
-import os
 
 
 class Weather:

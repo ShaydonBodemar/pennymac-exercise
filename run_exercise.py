@@ -16,7 +16,7 @@ from pennymac import soccer
 
 weatherdata = weather.Weather("w_data.dat")
 min_spread = weatherdata.get_minimum_temp_spread_day()
-print("Smallest Temperature Spread: " + min_spread)
+print("Day of Smallest Temperature Spread: " + min_spread)
 
 soccerdata = soccer.Soccer("soccer.dat")
 min_diff = soccerdata.get_minimum_diff_for_against_team()

@@ -1,7 +1,11 @@
 # Run Instructions
-In order to run the demo of the modules, use the following command (`python3` instead if python2 not installed).
+In order to run the demo of the modules, use the following commands (`python3` instead if python2 not installed). A `-w` flag is used to indicate the filetype is weather, and `-s` to indicate a soccer filetype. The argument following this flag should be the filename, as shown in the example.
 ```bash
-python run_exercise.py
+# the below entry will allow running of the given weather data file
+python run_exercise.py -w w_data.dat
+
+# the below entry will allow running of the given soccer data file
+python run_exercise.py -s soccer.dat
 ```
 If no version of Python is installed, installation instructions can be found at [this link](https://wiki.python.org/moin/BeginnersGuide/Download).
 
@@ -17,9 +21,6 @@ From the creation of the repository to the completion of the exercise, this took
 # TODO
 ## Missing Data
 Since there were missing data values in 'w_data.dat', the manner in which the DataFrame was populated would be very erroneous if the data at or past these missing values were to be accessed. This could be fixed without too much trouble, but I did not do it for this exercise since it was not necessary.
-
-## Dynamic Filenames
-For the `run_exercise.py`, dynamic filenames could easily be implemented instead of hard-coded as they are. I did not add this feature since I was only working with one file of each type.
 
 # Thank You
 Thank you for giving me the opportunity to showcase my work and technical abilities with this coding exercise.

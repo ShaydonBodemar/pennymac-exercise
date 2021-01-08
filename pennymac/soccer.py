@@ -33,6 +33,7 @@ class Soccer:
         temp_data = []
         all_data = []
         columns = None
+
         with open("pennymac/data/" + filename) as f:
             for line in f:
                 temp_data = line.split()
@@ -41,6 +42,7 @@ class Soccer:
                         columns = temp_data
                     else:
                         all_data.append(temp_data)
+
         for data in all_data:
             del data[-3]
             del data[0]

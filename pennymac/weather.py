@@ -34,6 +34,7 @@ class Weather:
         temp_data = []
         all_data = []
         columns = None
+
         with open("pennymac/data/" + filename) as f:
             for line in f:
                 temp_data = line.split()
@@ -42,6 +43,7 @@ class Weather:
                         columns = temp_data
                     else:
                         all_data.append(temp_data)
+            
         for i in range(len(all_data)):
             while len(all_data[i]) < len(columns):
                 all_data[i].append(None)
